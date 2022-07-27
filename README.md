@@ -15,7 +15,7 @@ that can be found in the LICENSE file. -->
 [![GitHub forks](https://img.shields.io/github/forks/fluttercandies/flutter_wechat_assets_picker?logo=github&style=flat-square)](https://github.com/fluttercandies/flutter_wechat_assets_picker/network)
 <a target="_blank" href="https://jq.qq.com/?_wv=1027&k=5bcc0gy"><img border="0" src="https://pub.idqqimg.com/wpa/images/group.png" alt="FlutterCandies" title="FlutterCandies"></a>
 
-Language: English | [中文](README-ZH.md)
+Language: English | [中文](README-ZH.md) | Persian
 
 An **assets' picker** based on the WeChat's UI,
 using [photo_manager][photo_manager pub] for asset implementation,
