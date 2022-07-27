@@ -12,6 +12,7 @@ const List<AssetPickerTextDelegate> assetPickerTextDelegates =
     <AssetPickerTextDelegate>[
   AssetPickerTextDelegate(),
   EnglishAssetPickerTextDelegate(),
+    PersianAssetPickerTextDelegate(),
   HebrewAssetPickerTextDelegate(),
   GermanAssetPickerTextDelegate(),
   RussianAssetPickerTextDelegate(),
@@ -162,7 +163,100 @@ class AssetPickerTextDelegate {
   ///  * VoiceOver: https://support.apple.com/en-us/HT206175
   AssetPickerTextDelegate get semanticsTextDelegate => this;
 }
+/// Persian Localization
+class PersianAssetPickerTextDelegate extends AssetPickerTextDelegate {
+  const PersianAssetPickerTextDelegate();
 
+  @override
+  String get languageCode => 'fa';
+
+  @override
+  String get confirm => 'تایید';
+
+  @override
+  String get cancel => 'لغو';
+
+  @override
+  String get edit => 'ویرایش';
+
+  @override
+  String get gifIndicator => 'گیف';
+
+  @override
+  String get loadFailed => 'بارگیری ناموفق';
+
+  @override
+  String get original => 'اصلی';
+
+  @override
+  String get preview => 'پیش نمایش';
+
+  @override
+  String get select => 'انتخاب';
+
+  @override
+  String get emptyList => 'لیست خالی';
+
+  @override
+  String get unSupportedAssetType => 'عدم پشتیبانی از پسوند فایل';
+
+  @override
+  String get unableToAccessAll => 'دسترسی به همه فایل ها قطع است';
+
+  @override
+  String get viewingLimitedAssetsTip =>
+      'فقط نمایش آلبوم ها و فایل هایی که دسترسی آنها به اپ داده شده';
+
+  @override
+  String get changeAccessibleLimitedAssets =>
+      'کلیک کن برای به روز رسانی فایل ها';
+
+  @override
+  String get accessAllTip => 'دسترسی به بعضی از فایل ها '
+      'برو به تنظیمات و به اپ دسترسی به همه ی فایل ها را بده';
+
+  @override
+  String get goToSystemSettings => 'برو به تنظیمات سیستم';
+
+  @override
+  String get accessLimitedAssets => 'ادامه با محدودیت های دسترسی';
+
+  @override
+  String get accessiblePathName => 'فایل های در دسترس';
+
+  @override
+  String get sTypeAudioLabel => 'صوت';
+
+  @override
+  String get sTypeImageLabel => 'عکس';
+
+  @override
+  String get sTypeVideoLabel => 'فیلم';
+
+  @override
+  String get sTypeOtherLabel => 'دیگر فایل ها';
+
+  @override
+  String get sActionPlayHint => 'پخش کردن';
+
+  @override
+  String get sActionPreviewHint => 'پیش نمایش';
+
+  @override
+  String get sActionSelectHint => 'انتخاب';
+
+  @override
+  String get sActionSwitchPathLabel => 'تغییر آدرس';
+
+  @override
+  String get sActionUseCameraHint => 'استفاده از دوربین';
+
+  @override
+  String get sNameDurationLabel => 'زمان';
+
+  @override
+  String get sUnitAssetCountLabel => 'تعداد';
+}
 /// [AssetPickerTextDelegate] implements with English.
 /// English Localization
 class EnglishAssetPickerTextDelegate extends AssetPickerTextDelegate {
